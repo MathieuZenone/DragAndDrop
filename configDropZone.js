@@ -25,8 +25,11 @@ Dropzone.autoDiscover = false;
 					var _this = this;
 					_this.removeAllFiles();
 				}
-    
+
 			});
+			this.on("success", function(file, response) {
+				alert(response)
+			})
 		},
         });
        

@@ -1,4 +1,5 @@
 <?php
+
 // Upload directory
 $target_dir = "uploads/";
 
@@ -11,5 +12,7 @@ if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_file)) {
 }else{ 
   $msg = "Error while uploading";
 }
-echo $msg;
-exit;
+echo $msg . "\n";
+echo $_POST["description"];
+
+
